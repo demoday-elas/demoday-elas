@@ -48,5 +48,5 @@ class Empresas(models.Model):
     qtd_vaga = models.CharField(max_length=2)
     Descricao_vaga = models.TextField()
     
-    def _str_(self):
+    def __str__(self):
         return self.empresa
