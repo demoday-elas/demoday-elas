@@ -18,9 +18,9 @@ def mostrar_cadastro(request):
 
     contexto = {
         'form': formulario,
-        'msg':msg,
+        'msg':msg
     }
-    return render (request, 'cadastro2.html')  
+    return render (request, 'cadastro2.html',contexto)  
 
 def mostrar_login(request):
     return render (request, 'cadastro2.html')
