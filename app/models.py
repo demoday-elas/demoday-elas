@@ -45,7 +45,7 @@ class Empresas(models.Model):
     estado = models.CharField(max_length=2, choices=estado_opc)
     regiao = models.CharField(max_length=200, choices= zonas)
     salario = models.CharField(max_length=50)
-    qtd_vaga = models.TextField()
+    qtd_vaga = models.CharField(max_length=2)
     Descricao_vaga = models.TextField()
     
     def _str_(self):
