@@ -50,3 +50,14 @@ class Empresas(models.Model):
     
     def __str__(self):
         return self.empresa
+    def _str_(self):
+        return self.empresa
+
+class Usuaria(models.Model):
+    usuaria = models.CharField(max_length=20)
+    senha = models.CharField(max_length=20)
+    nome = models.CharField(max_length=50)
+    sobrenome = models.CharField(max_length=50)
+    email = models.EmailField()
+    telefone = models.CharField(max_length=14)
+    nascimento = models.DateField()

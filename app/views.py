@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from app.forms import UsuariaForm
 
 # Create your views here.
 
@@ -7,7 +8,19 @@ def mostrar_index(request):
 
 
 def mostrar_cadastro(request):
-    return render (request, 'cadastro2.html')  
+    formulario = UsuariaForm(request.POST or None)
+    msg = ''
+
+    if formulario.is_valid():
+        formulario.save()
+        formulario = UsuariaForm()
+        msg = 'Cadastro realizado com sucesso linda!!!!!!!'
+
+    contexto = {
+        'form': formulario,
+        'msg':msg
+    }
+    return render (request, 'cadastro2.html',contexto)  
 
 def mostrar_login(request):
     return render (request, 'cadastro2.html')
