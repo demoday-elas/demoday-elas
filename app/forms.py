@@ -12,4 +12,5 @@ class UsuariaForm(forms.ModelForm):
             'sobrenome',
             'email', 
             'telefone',
+            'nascimento',
         ]

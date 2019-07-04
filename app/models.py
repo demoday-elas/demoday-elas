@@ -58,4 +58,4 @@ class Usuaria(models.Model):
     sobrenome = models.CharField(max_length=50)
     email = models.EmailField()
     telefone = models.CharField(max_length=14)
-    
+    nascimento = models.DateField()
