@@ -1,6 +1,7 @@
 {% load staticfiles %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,16 @@
     <title>Cadastro</title>
 </head>
 <body>
-    
+    <h1>CADASTRE-SE</h1>
+    {% if msg %}
+        <p>{{ msg }}</p>
+    {% endif %}
+
+    <form method="POST">
+
+        {% csrf_token %}
+        {{ form }}
+
+        <button type="submit">CADASTRAR</button>
 </body>
 </html>

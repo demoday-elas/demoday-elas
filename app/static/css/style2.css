@@ -2,3 +2,7 @@ body{
     margin:0;
     background-color: lightcoral;
 }
+h1{
+    color: blue ;
+    font-size: 30pt;
+}
