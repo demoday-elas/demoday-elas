@@ -13,7 +13,7 @@ class EmpresasForm(forms.ModelForm):
             'qtd_vaga '
             'Descricao_vaga'
 
-from django import forms
+
 from app.models import Usuaria
 
 class UsuariaForm(forms.ModelForm):
