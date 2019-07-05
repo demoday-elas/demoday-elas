@@ -23,7 +23,7 @@ def mostrar_cadastro(request):
     return render (request, 'cadastro2.html',)  
 
 def mostrar_login(request):
-    return render (request, 'cadastro2.html')
+    return render (request, 'login3.html')
 
 def mostrar_areas(request):
     return render (request, 'areas4.html')
