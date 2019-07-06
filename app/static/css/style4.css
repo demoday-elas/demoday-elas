@@ -1,4 +1,17 @@
 body{
     margin:0;
+
+
+}
+h1{
+    color: blue;
+}
+
+nav{
     background-color: pink;
+
+}
+
+section{
+    background-color: blueviolet;
 }
