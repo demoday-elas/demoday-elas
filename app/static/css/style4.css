@@ -1,17 +1,78 @@
 body{
     margin:0;
+    display: grid;
+    grid-template-areas: 'nav nav'
+                        'section section';
+    grid-auto-rows: 20vh 80vh ;                   
+}
 
+
+
+nav{ 
+    grid-area: nav;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 
 }
-h1{
-    color: blue;
-}
-
-nav{
-    background-color: pink;
-
+nav a {
+    color: white;
+    text-decoration: none;
 }
 
 section{
+    grid-area: section;
     background-color: blueviolet;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+section h1{
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Sniglet', cursive;
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+section h2{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+section .opcoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section .vagas {
+
+text-align: center;
+    
+}
+
+.button1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8em 0em;
+    width: 350px;
+    background: purple;
+    border-radius: 50px;
+    border: 0;
+    color: #fff;
+    font-size: 10pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 2em;
+    text-transform: uppercase;
+ 
+
 }
