@@ -10,18 +10,39 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <h1>CADASTRE-SE</h1>
-    {% if msg %}
-        <p>{{ msg }}</p>
-    {% endif %}
+    <nav>
+        <a href="/"> LOGO</a>
+        <a href="/">VOLTAR</a>
+    </nav>
+    <header>
+        
+        <div class="col_1">
+            <label for="id_password1">Usuário</label>
+            <input type="text" name="username" maxlength="150" autofocus="" required="" id="id_username">
+            <label for="id_password1">Senha:</label>
+            <input type="password" name="password1" required="" id="id_password1">
+            <input type="hidden" name="csrfmiddlewaretoken" value="Wx0kdMzLmXjXj4WJR0CRRaBHVaG15vV1Er8tVllW4adl1u0hzCUJsYgtJJiaap9a">
+            <label for="id_password2">Confirmação de senha:</label>
+            <input type="password" name="password2" required="" id="id_password2">
+      
+       
+            <label for="id_first_name">Nome:</label>
+            <input type="text" name="first_name" maxlength="255" required="" id="id_first_name">
+            <label for="id_last_name">Sobrenome:</label>
+            <input type="text" name="last_name" maxlength="255" required="" id="id_last_name">
+            <label for="id_email">E-mail:</label>
+            <input type="email" name="email" required="" id="id_email">
+            <label for="id_cellphone">Telefone:</label>
+            <input type="text" name="cellphone" maxlength="11" required="" id="id_cellphone">
+            <label for="id_birthday">Data de Nascimento:</label>
+            <input type="date" name="birthday" required="" id="id_birthday">
+            <a class="button1" href="/areas">Cadastrar</a>
+        
+        </div>
+        <h1>Cadastre-se e saiba mais!</h1>
+       
+        
 
-    <form method="POST">
-
-        {% csrf_token %}
-        {{ form }}
-
-        <button type="submit">CADASTRAR</button>
-    <a href="/"> Home</a>
-    <a href="/login3">Entrar</a>
+    </header>
 </body>
 </html>
