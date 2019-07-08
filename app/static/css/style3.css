@@ -1,4 +1,74 @@
 body{
     margin:0;
-    background-color:purple;
+    display: grid;
+    grid-template-areas: 'nav nav'
+                        'header header';
+    grid-auto-rows: 20vh 80vh;
 }
+
+nav{
+    grid-area: nav;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blueviolet;
+}
+
+header h1{
+    color: whitesmoke;
+   
+}
+
+header div .input{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8em 0em;
+    width: 350px;
+    background: whitesmoke;
+    border-radius: 50px;
+    border: 0;
+    color: #fff;
+    font-size: 10pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin: 1em 2em;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+header div .texto{
+    color: whitesmoke;
+    text-align: center;
+}
+
+header div a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8em 0em;
+    width: 350px;
+    background: purple;
+    border-radius: 50px;
+    border: 0;
+    color: #fff;
+    font-size: 10pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+ 
+
+ 
