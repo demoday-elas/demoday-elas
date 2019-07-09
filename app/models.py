@@ -40,18 +40,18 @@ estado_opc = [
 ]
 
 class Empresas(models.Model):
-    empresa = models.CharField(max_length=100)
+    nome = models.CharField(max_length=100)
+    endereço = models.CharField (max_length=100)
     cargo  = models.CharField(max_length=100)
     estado = models.CharField(max_length=2, choices=estado_opc)
     regiao = models.CharField(max_length=200, choices= zonas)
     salario = models.CharField(max_length=50)
-    qtd_vaga = models.CharField(max_length=2)
+    qtd_vaga = models.DecimalField(max_digits=8, decimal_places=0)
     Descricao_vaga = models.TextField()
     
     def __str__(self):
         return self.empresa
-    def _str_(self):
-        return self.empresa
+    
 
 class Usuaria(models.Model):
     usuaria = models.CharField(max_length=20)
@@ -61,3 +61,6 @@ class Usuaria(models.Model):
     email = models.EmailField()
     telefone = models.CharField(max_length=14)
     nascimento = models.DateField()
+
+    def __str__(self):
+        return self.usuaria
