@@ -41,7 +41,7 @@ estado_opc = [
 
 class Empresas(models.Model):
     nome = models.CharField(max_length=100, default='')
-    endereço = models.CharField (max_length=100, default='')
+    endereco = models.CharField (max_length=100, default='')
     cargo  = models.CharField(max_length=100, default='')
     estado = models.CharField(max_length=2, choices=estado_opc, default='')
     regiao = models.CharField(max_length=200, choices= zonas, default='')

@@ -1,18 +1,19 @@
 from django import forms
-from app.models import Usuaria, Login
+from app.models import Usuaria, Login, Empresas
 
-# class EmpresasForm(forms.ModelForm):
-#     class Meta:
-#         model = Empresas
-#         fields = [
-#             'empresa'
-#             'cargo'  
-#             'estado' 
-#             'regiao '
-#             'salario '
-#             'qtd_vaga '
-#             'Descricao_vaga'
-#         ]
+class EmpresasForm(forms.ModelForm):
+    class Meta:
+        model = Empresas
+        fields = [
+            'nome',
+            'endereco', 
+            'cargo',
+            'estado',
+            'regiao', 
+            'salario', 
+            'qtd_vaga', 
+            'Descricao_vaga',                                                                                                                                  
+        ]
 
 class UsuariaForm(forms.ModelForm):
     class Meta:
