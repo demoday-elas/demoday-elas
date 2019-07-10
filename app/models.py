@@ -64,3 +64,12 @@ class Usuaria(models.Model):
 
     def __str__(self):
         return self.usuaria
+
+class Login(models.Model):
+    nome = models.CharField(max_length=50)
+    sobrenome = models.CharField(max_length=50)
+    email = models.EmailField(max_length=50)    
+    senha = models.CharField(max_length=8)
+
+    def _str_(self):
+        return self.sobrenome
