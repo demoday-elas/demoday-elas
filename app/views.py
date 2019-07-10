@@ -43,7 +43,8 @@ def mostrar_login(request):
     return render (request, 'login3.html', contexto)
 
 def mostrar_areas(request):
-    return render (request, 'areas4.html')
+    vagas = Usuaria.objects.all()
+    return render (request, 'areas4.html', {'vagas':vagas})
 
 def mostrar_vagas(request):  
     vaga = Empresas.objects.all()  
