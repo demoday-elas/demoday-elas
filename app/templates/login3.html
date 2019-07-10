@@ -15,12 +15,16 @@
     </nav>
     <header>   
         <h1>Que bom vê-la por aqui :)</h1>
-        <div>   
-            <h1>LOGIN</h1>           
-             <h3 class="texto">E-mail:</h3>
-             <input class="input" type="email" name="" id="email">
-             <h3 class="texto">Senha:</h3>
-             <input class="input" type="password" name="Senha :" id="password">    
+        <div class="login"> 
+            <h1>LOGIN</h1>     
+            
+            {% if mensagem %}
+                <p>{{ mensagem }}</p>
+                {% endif %}
+            <form method="POST">
+                {% csrf_token %}
+                {{ form }}
+
              <a href="/areas">Entrar</a>
         </div>   
     </header>
