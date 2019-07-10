@@ -1,4 +1,86 @@
 body{
     margin:0;
-    background-color: brown;
+    background-color: lightslategray;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav{
+    height: 80px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+nav div a{
+    display: inline-flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a img{
+    height: 30px;
+}
+
+nav div a:hover{
+    background-color: #111;
+}
+
+nav img{
+    height: 50px;
+}
+
+nav div{
+    width: 80vw;
+}
+
+header{
+    height: 50vh;
+}
+
+header div{
+    width: 30vw;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div{
+    width: 20vw;
+}
+
+button{
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: purple;
+    color: white;
+}
+
+footer{
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
 }
