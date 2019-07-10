@@ -1,20 +1,18 @@
 from django import forms
-from app.models import Empresas
+from app.models import Usuaria, Login
 
-class EmpresasForm(forms.ModelForm):
-    class Meta:
-        model = Empresas
-        fields = [
-            'empresa'
-            'cargo'  
-            'estado' 
-            'regiao '
-            'salario '
-            'qtd_vaga '
-            'Descricao_vaga'
-
-
-from app.models import Usuaria
+# class EmpresasForm(forms.ModelForm):
+#     class Meta:
+#         model = Empresas
+#         fields = [
+#             'empresa'
+#             'cargo'  
+#             'estado' 
+#             'regiao '
+#             'salario '
+#             'qtd_vaga '
+#             'Descricao_vaga'
+#         ]
 
 class UsuariaForm(forms.ModelForm):
     class Meta:
@@ -27,4 +25,14 @@ class UsuariaForm(forms.ModelForm):
             'email', 
             'telefone',
             'nascimento',
+        ]
+
+class LoginForm(forms.ModelForm):
+    class Meta:
+        model = Login
+        fields = [
+            'nome',
+            'sobrenome',
+            'email',
+            'senha',
         ]
