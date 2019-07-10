@@ -16,23 +16,19 @@
     </nav>
     <header>
         <h1>Vagas</h1>   
-        <!-- {% for empresas in vaga %}
-        <div class="card">
-            
-            <p>Nome: {{Empresas.nome}}</p>
-            <p>Endereço: {{Empresas.endereco}}</p>
-            <p>Cargo: {{Empresas.cargo}}</p> 
-            <p>Estado: {{Empresas.estado}</p> 
-            <p>Região: {{Empresas.regiao}</p> 
-            <p>Salário: {{Empresas.salario}</p> 
-            <p>Vagas: {{Empresas.qtd_vaga}</p>
-            <p>Descrição das vagas: {{Empresas.descricao_vaga}</p>
-
-            
+        {% for empresa in vaga %}
+        <div class="card">            
+            <p>Nome: {{empresa.nome}}</p>
+            <p>Endereço: {{empresa.endereco}}</p>
+            <p>Cargo: {{empresa.cargo}}</p> 
+            <p>Estado: {{empresa.estado}}</p> 
+            <p>Região: {{empresa.regiao}}</p> 
+            <p>Salário: {{empresa.salario}}</p> 
+            <p>Vagas: {{empresa.qtd_vaga}}</p>
+            <p>Descrição das vagas: {{empresa.descricao_vaga}}</p>            
          </div>
-    {% endfor %} -->
+        {% endfor %}
     </header>
-
     
 </body>
-</html> -->
+</html> 

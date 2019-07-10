@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from app.models import Empresas, Usuaria
+from app.models import Usuaria
+from app.models import Empresas
 from app.forms import UsuariaForm, LoginForm, EmpresasForm
 
 # from app.forms import UsuariaForm
@@ -45,6 +46,6 @@ def mostrar_areas(request):
     return render (request, 'areas4.html')
 
 def mostrar_vagas(request):  
-    # vaga = Empresas.objects.all()  
-    return render (request,'vagas5.html')   
+    vaga = Empresas.objects.all()  
+    return render (request,'vagas5.html', {'vaga':vaga})   
 
