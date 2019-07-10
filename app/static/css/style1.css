@@ -1,28 +1,22 @@
 body{
     margin:0;
-    padding: 0;
     font-family: 'Ubuntu', sans-serif;
 }
 
 header{
     background: linear-gradient(rgba(223, 0, 19, 0.918),rgba(99, 0, 112, 0.787)), url('/static/images/header.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 100vh;
 }
 
 nav{
     align-items: center;
-    background: #333;
     color: #fff;
     display: flex;
-    font-size: 2rem;
-    height: 6rem;
-    justify-content: center;
-    left: 0;
     position: fixed;
-    right: 0;
-    top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 nav ul{
@@ -40,6 +34,11 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    text-decoration: 
 }
 
 .logo{
@@ -61,7 +60,8 @@ section{
     height: 80vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
+    margin-top: 150px;
 }
 
 section div{
@@ -76,6 +76,10 @@ section div{
 section div h3{
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.apoio, .contrato{
+    height: 200px;
 }
 
 button{
