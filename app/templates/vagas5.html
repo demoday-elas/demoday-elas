@@ -16,9 +16,19 @@
     </nav>
     <header>
         <h1>Vagas</h1>   
-                
+        {% for empresa in vaga %}
+        <div class="card">            
+            <p>Nome: {{empresa.nome}}</p>
+            <p>Endereço: {{empresa.endereco}}</p>
+            <p>Cargo: {{empresa.cargo}}</p> 
+            <p>Estado: {{empresa.estado}}</p> 
+            <p>Região: {{empresa.regiao}}</p> 
+            <p>Salário: {{empresa.salario}}</p> 
+            <p>Vagas: {{empresa.qtd_vaga}}</p>
+            <p>Descrição das vagas: {{empresa.descricao_vaga}}</p>            
+         </div>
+        {% endfor %}
     </header>
-
     
 </body>
-</html>
+</html> 

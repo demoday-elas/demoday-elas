@@ -26,6 +26,10 @@
                  <h2> Veja aqui como a elas.com pode te ajudar: </h2> 
 
             <div class="vagas">   
+                    {%  for indice in vagas %}
+                    <p> Seja bem-vinda {{ indice.usuaria}}</p>
+                    {% endfor %}
+
                 <a href="/vagas"><button class="button1">Administração</button></a>
                 <a href="/vagas"><button class="button1">Comunicação</button></a>
                 <a href="/vagas"><button class="button1">Humanas</button></a>
