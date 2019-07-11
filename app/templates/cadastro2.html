@@ -18,19 +18,23 @@
     </nav>
     <header>        
         <div >
-                {% if mensagem %}
-                <p>{{ mensagem }}</p>
-                {% endif %}
+            <h1 class="texto">Cadastre-se e saiba mais!</h1>
+            {% if msg %}
+                <p>{{ msg }}</p>
+            {% endif %}
             <form method="POST">
                 {% csrf_token %}
                 {{ form }}
-                <!-- <button id="botao" type="submit">Cadastrar</button> -->
-               <a href="{% url 'login3' %}"><button id="botao" type="submit">Cadastrar</button></a>
-        </div>
+                <button id="botao" type="submit">Cadastrar</button>     
+            </form>        
 
-              
-        <h1>Cadastre-se e saiba mais!</h1>
+        </div>             
+        <div id="login">   
+            <h1 class="texto">Agora faça o seu login aqui</h1>
         
+        
+            <a href="/login3"> Login</a>
+        </div>
 
     </header>
 </body>

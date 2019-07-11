@@ -71,16 +71,30 @@ header div label{
     text-decoration: none;
 }
 
-h1{
+#login a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.8em 0em;
+    width: 350px;
+    background: purple;
+    border-radius: 50px;
+    border: 0;
+    color: #fff;
+    font-size: 10pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.texto{
     color: whitesmoke ;
     font-size: 30pt; 
+    height: 80px;
+    text-align: center;
 }
 
-
-.ativo{
-    display: flex;
-     justify-content: space-around;  
-     width: 70%;
-     transform: translateX(100vw);
-     transition: 3s;
-}
