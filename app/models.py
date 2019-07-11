@@ -65,3 +65,6 @@ class Usuaria(models.Model):
     def __str__(self):
         return self.usuaria
 
+   
+
+
