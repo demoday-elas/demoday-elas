@@ -52,7 +52,7 @@ header div label{
     font-weight: bold;
 }
 
-    header div button{
+#botao{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -74,4 +74,13 @@ header div label{
 h1{
     color: whitesmoke ;
     font-size: 30pt; 
+}
+
+
+.ativo{
+    display: flex;
+     justify-content: space-around;  
+     width: 70%;
+     transform: translateX(100vw);
+     transition: 3s;
 }
