@@ -15,14 +15,17 @@ def mostrar_cadastro(request):
     formulario = UsuariaForm(request.POST or None)
     msg = ''
 
-    contexto = {
-        'form': formulario,
-        'msg':msg
-    }
+    
+    
     if formulario.is_valid():
         formulario.save()
         formulario = UsuariaForm()
-        msg = 'Cadastro realizado com sucesso linda!!!!!!!'
+        msg = 'Cadastro realizado com sucesso, vamos para o próximo passo? -->!!'
+
+    contexto = {
+        'form': formulario,
+        'msg':msg   
+    } 
 
     return render (request, 'cadastro2.html', contexto)  
 
