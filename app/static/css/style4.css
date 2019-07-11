@@ -51,9 +51,13 @@ section .opcoes{
     
 }
 
-section .vagas {
+section .vagas p {
 
 text-align: center;
+color: #fff;
+    font-size: 10pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     
 }
 
