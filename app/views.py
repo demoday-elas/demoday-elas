@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from app.models import Usuaria
 from app.models import Empresas
 from app.forms import UsuariaForm, LoginForm, EmpresasForm
@@ -15,32 +15,31 @@ def mostrar_cadastro(request):
     formulario = UsuariaForm(request.POST or None)
     msg = ''
 
+    contexto = {
+        'form': formulario,
+        'msg':msg
+    }
     if formulario.is_valid():
         formulario.save()
         formulario = UsuariaForm()
         msg = 'Cadastro realizado com sucesso linda!!!!!!!'
 
-    contexto = {
-        'form': formulario,
-        'msg':msg
-    }
     return render (request, 'cadastro2.html', contexto)  
 
 def mostrar_login(request):
-    formulario = LoginForm(request.POST or None)
-    msg = ''
+    formulario_login = LoginForm(request.POST or None) 
+    msg = ' '
+    if formulario_login.is_valid():
+        usuario = formulario_login.cleaned_data['usuario']
+        senha = formulario_login.cleaned_data['senha']
+        user = Usuaria.objects.filter(usuaria=usuario).first()
+        
+        if not user or user.senha != senha:
+            msg = 'Verifique novamente'
+        else:
+            return redirect('/areas')
 
-    if formulario.is_valid():
-        formulario.save()
-        formulario = UsuariaForm()
-        msg = 'Cadastro realizado com sucesso linda!!!!!!!'
-
-    contexto = {
-        'form': formulario,
-        'msg':msg
-    }
-
-    return render (request, 'login3.html', contexto)
+    return  render(request, 'login3.html', {'form': formulario_login, 'msg': msg})
 
 def mostrar_areas(request):
     vagas = Usuaria.objects.all()
