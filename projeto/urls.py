@@ -24,4 +24,5 @@ urlpatterns = [
     path ('login3/', views.mostrar_login),
     path('areas/',views.mostrar_areas),
     path('vagas/',views.mostrar_vagas),
+    
 ]
