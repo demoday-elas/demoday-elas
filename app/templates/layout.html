@@ -1,0 +1,54 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <link rel="shortcut icon" href="{% static 'favicon/favicon.png' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conecta</title>
+</head>
+<body>
+    
+    <nav>
+        <img class="logo" src="{% static 'images/logoConecta_Branco.png' %}" alt="logo">
+        <div class="menu">
+            <ul>
+                <li><a href="/login3">Login</a></li>
+                <li><a href="/cadastro">Cadastro</a></li>
+                <li><a href="/cadastro">Sobre</a></li>
+                <li><a href="/cadastro">Contato</a></li>
+    
+            </ul>
+        </div>
+    </nav>    
+
+    {% block body %}
+    {% endblock %}
+
+<div class="footer">
+    </div>
+        <footer>
+          <div class="socialFooter">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>    
+    <div class="logoFooter">
+        <img src="{% static 'images/logoConecta_LetraBranco.png' %}" alt="">
+    </div>
+    <div class="creditsFooter">
+        <p>Uma realização:</p>
+        <p>Amilton, Dandara, Ketlyn Ferreguete e Marcia Corte.</p>
+        <p>@Conecta 2019 | Todos os direitos reservados.</p>
+    </div>
+</footer>  
+
+</body>
+</html>

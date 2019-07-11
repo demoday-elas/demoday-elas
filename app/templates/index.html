@@ -1,4 +1,6 @@
+{% extends "layout.html" %}
 {% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,20 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Conecta</title>
 </head>
-<body>
-    <header>
-        <nav>
-            <img class="logo" src="{% static 'images/logoConecta_Branco.png' %}" alt="logo">
-            <div class="menu">
-                <ul>
-                    <li><a href="/login3">Login</a></li>
-                    <li><a href="/cadastro">Cadastro</a></li>
-                    <li><a href="/cadastro">Sobre</a></li>
-                    <li><a href="/cadastro">Contato</a></li>
 
-                </ul>
-            </div>
-        </nav>
+<body>
+{% block body %}
+    <header>
         <div>
             <h1>Bem vinda ao Conecta!</h1>
             <h2>Quem somos?</h2>
@@ -45,10 +37,7 @@
     </section>
 
     <button>Cadastre-se</button>
-
-    <footer>
-        <p>@Conecta | Todos os direitos reservados</p>
-    </footer>
+{% endblock %}
 
 </body>
 </html>
