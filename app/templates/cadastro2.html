@@ -16,7 +16,7 @@
         <a href="/">VOLTAR</a>
     </nav>
     <header>        
-        <div class="col_1">
+        <div >
                 {% if mensagem %}
                 <p>{{ mensagem }}</p>
                 {% endif %}
@@ -24,10 +24,10 @@
                 {% csrf_token %}
                 {{ form }}
                 
-                <button type="submit">Cadastrar</button>
+            <button type="submit">Cadastrar</button>   
         </div>
 
-                   
+              
         <h1>Cadastre-se e saiba mais!</h1>
        
         

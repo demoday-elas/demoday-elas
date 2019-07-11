@@ -9,7 +9,7 @@ body{
 
 nav{
     grid-area: nav;
-    background-color: red;
+    background-color:red;
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -24,7 +24,7 @@ header{
     padding: 60px;
 }
 
-header .col_1 input{
+ header div input {
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -40,11 +40,19 @@ header .col_1 input{
     margin: 1em 2em;
     text-transform: uppercase;
     color: black;
-    text-align: center;
+    text-align: center; 
+    
 
 }
 
-header .col_1 .button1{
+header div label{
+    color: #fff;
+    font-size: 10pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+    header div button{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -65,5 +73,5 @@ header .col_1 .button1{
 
 h1{
     color: whitesmoke ;
-    font-size: 30pt;
+    font-size: 30pt; 
 }
