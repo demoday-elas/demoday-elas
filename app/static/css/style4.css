@@ -2,10 +2,11 @@ body{
     margin:0;
     display: grid;
     grid-template-areas: 'nav nav'
+                        'header header'
                         'section section';
-    grid-auto-rows: 20vh 80vh ;                   
+    grid-auto-rows: 20vh 10vh 100vh ; 
+    background-color: blueviolet;                  
 }
-
 
 
 nav{ 
@@ -14,6 +15,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-content: center;
+    
 
 }
 nav a {
@@ -21,9 +23,22 @@ nav a {
     text-decoration: none;
 }
 
+header{
+    grid-area: section;   
+    display: flex;
+    align-items: flex-start;    
+    justify-content: flex-start;
+    color: black;
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+
+
+}
+
 section{
     grid-area: section;
-    background-color: blueviolet;
     display: flex;
     align-items: center;    
     justify-content: center;
