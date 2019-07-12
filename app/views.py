@@ -17,7 +17,7 @@ def mostrar_cadastro(request):
     if formulario.is_valid():
         formulario.save()
         formulario = UsuariaForm()
-        msg = 'Cadastro realizado com sucesso, vamos para o próximo passo? -->'
+        msg = 'Cadastro realizado com sucesso, vamos para o próximo passo? '
 
     contexto = {
         'form': formulario,
