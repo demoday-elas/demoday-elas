@@ -1,4 +1,70 @@
 body{
     margin: 0;
+   
+    display: grid;
+    grid-template-areas: 'nav nav nav '
+                        'header header header'
+                        'main main main';
+grid-auto-rows: 20vh 20vh 100vh;
+    
+}
+
+nav{
+    grid-area: nav;
     background-color: blue;
+
+
+}
+
+header{
+    grid-area: header;
+}
+
+header h3{
+    color: purple;
+    font-size: 30pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+main{
+    grid-area: main;
+
+    
+}
+
+main hr{
+    font-size: 30px;
+    border-color: purple;
+    height: 10px;
+    background-color: purple;
+}
+
+#button2{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8em 0em;
+    width: 200px;
+    background: purple;
+    border-radius: 50px;
+    border: 0;
+    color: #fff;
+    font-size: 10pt;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1em 2em;
+    text-transform: none;
+    text-decoration: none;
+    
+}
+
+.card{
+    width: 350px;
+    height: 300px;
+    border: 5px solid purple;
+    text-align: center;
+    
 }
