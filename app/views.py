@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
-from app.models import Usuaria
-from app.models import Empresas
+from app.models import Usuaria, Empresas
 from app.forms import UsuariaForm, LoginForm, EmpresasForm
 
 # from app.forms import UsuariaForm
@@ -13,14 +12,12 @@ def mostrar_index(request):
 
 def mostrar_cadastro(request):
     formulario = UsuariaForm(request.POST or None)
-    msg = ''
-
-    
+    msg = ''    
     
     if formulario.is_valid():
         formulario.save()
         formulario = UsuariaForm()
-        msg = 'Cadastro realizado com sucesso, vamos para o próximo passo? -->!!'
+        msg = 'Cadastro realizado com sucesso, vamos para o próximo passo? -->'
 
     contexto = {
         'form': formulario,
@@ -28,6 +25,7 @@ def mostrar_cadastro(request):
     } 
 
     return render (request, 'cadastro2.html', contexto)  
+
 
 def mostrar_login(request):
     formulario_login = LoginForm(request.POST or None) 

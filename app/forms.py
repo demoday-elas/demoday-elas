@@ -9,7 +9,6 @@ class EmpresasForm(forms.ModelForm):
             'endereco', 
             'cargo',
             'estado',
-            'regiao', 
             'salario', 
             'qtd_vaga', 
             'Descricao_vaga',                                                                                                                                  

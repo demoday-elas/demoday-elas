@@ -44,7 +44,6 @@ class Empresas(models.Model):
     endereco = models.CharField (max_length=100, default='')
     cargo  = models.CharField(max_length=100, default='')
     estado = models.CharField(max_length=2, choices=estado_opc, default='')
-    regiao = models.CharField(max_length=200, choices= zonas, default='')
     salario = models.CharField(max_length=50, default='')
     qtd_vaga = models.DecimalField(max_digits=8, decimal_places=0)
     Descricao_vaga = models.TextField()
