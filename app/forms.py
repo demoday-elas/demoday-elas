@@ -14,6 +14,20 @@ class EmpresasForm(forms.ModelForm):
             'Descricao_vaga',                                                                                                                                  
         ]
 
+
+# class SegurancaForm(forms.ModelForm):
+#     class Meta:
+#         model = Seguranca
+#         fields = [
+#             'nome',
+#             'endereco', 
+#             'cargo',
+#             'estado',
+#             'salario', 
+#             'qtd_vaga', 
+#             'Descricao_vaga',                                                                                                                                  
+#       ]        
+
 class UsuariaForm(forms.ModelForm):
     class Meta:
         model = Usuaria
