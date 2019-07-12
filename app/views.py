@@ -48,5 +48,8 @@ def mostrar_areas(request):
 
 def mostrar_vagas(request):  
     vaga = Empresas.objects.all()  
-    return render (request,'vagas5.html', {'vaga':vaga})   
+    return render (request,'vagas5.html', {'vaga':vaga})  
+
+def mostrar_vaga(request):
+    return render (request,'vagaNull6.html')
 
