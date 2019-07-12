@@ -5,7 +5,11 @@ body{
                         'header header'
                         'section section';
     grid-auto-rows: 20vh 10vh 100vh ; 
-    background-color: blueviolet;                  
+    background-color: whitesmoke; 
+    background:  url('/static/images/desk.jpg'); 
+    background-size: cover;
+    background-position: top;
+    height: 10vh;    
 }
 
 
@@ -15,11 +19,12 @@ nav{
     display: flex;
     justify-content: space-around;
     align-content: center;
+    background: linear-gradient(rgba(223, 0, 19, 0.918),rgba(99, 0, 112, 0.787));
     
 
 }
 nav a {
-    color: white;
+    color:purple;
     text-decoration: none;
 }
 
@@ -33,8 +38,10 @@ header{
     font-size: 40px;
     font-weight: 900;
     color: white;
+}
 
-
+header p{
+    color: purple;
 }
 
 section{
@@ -50,11 +57,11 @@ section h1{
     font-family: 'Abel', sans-serif;
     font-size: 40px;
     font-weight: 900;
-    color: white;
+    color: blueviolet;
     text-align: center;
 }
 section h2{
-    color: white;
+    color: blueviolet;
     text-decoration: none;
     text-align: center;
 }
@@ -66,14 +73,6 @@ section .opcoes{
     
 }
 
-section .vagas p {
-    text-align: center;
-    color: #fff;
-    font-size: 10pt;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    
-}
 
 .button1{
     display: flex;
@@ -82,7 +81,7 @@ section .vagas p {
     padding: 0.8em 0em;
     width: 350px;
     background-color: purple;
-    background: linear-gradient(rgba(223, 0, 19, 0.918),rgba(99, 0, 112, 0.787));
+    background: linear-gradient(rgba(130, 0, 19, 0.918),rgba(50, 0, 112, 0.787));
     border-radius: 50px;
     border: 0;
     color: #fff;
@@ -93,6 +92,4 @@ section .vagas p {
     margin: 1em 2em;
     text-transform: none;
     text-decoration: none;
- 
-
 }
