@@ -3,7 +3,7 @@ body{
     display: grid;
     grid-template-areas: 'nav nav'
                         'header header';
-    grid-auto-rows: 20vh 130vh;                    
+    grid-auto-rows: 20vh 150vh;                    
     
 }
 
@@ -23,6 +23,7 @@ header{
     align-content: center;
     padding: 60px;
 }
+
 
 header div p{
     font-family: 'Abel', sans-serif;
