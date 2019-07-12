@@ -38,7 +38,7 @@ header{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     margin: 1em 2em;
-    text-transform: uppercase;
+    text-transform: none;
     color: black;
     text-align: center; 
     
@@ -67,7 +67,7 @@ header div label{
     font-weight: bold;
     cursor: pointer;
     margin: 1em 2em;
-    text-transform: uppercase;
+    text-transform: none;
     text-decoration: none;
 }
 
@@ -86,7 +86,7 @@ header div label{
     font-weight: bold;
     cursor: pointer;
     margin: 1em 2em;
-    text-transform: uppercase;
+    text-transform: none;
     text-decoration: none;
 
 }
