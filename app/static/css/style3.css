@@ -19,7 +19,14 @@ header{
     align-items: center;
     justify-content: space-around;
     background-color: blueviolet;
+    background: linear-gradient(rgba(163, 23, 35, 0.918),rgba(99, 0, 112, 0.787)), url('/static/images/woman.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+
 }
+
+
 
 header h1{
     color: whitesmoke;
@@ -41,12 +48,12 @@ header div input{
     font-weight: bold;
     margin: 1em 2em;
     text-transform: none;
-    color: black;
+    color:whitesmoke;
     text-align: center;
 }
 
 header div label{
-    color: #fff;
+    color: whitesmoke;
     font-size: 10pt;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -58,7 +65,7 @@ header div button{
     justify-content: space-around;
     padding: 0.8em 0em;
     width: 350px;
-    background: purple;
+    background: white;
     border-radius: 50px;
     border: 0;
     color: #fff;
@@ -69,6 +76,7 @@ header div button{
     margin: 1em 2em;
     text-transform: none;
     text-decoration: none;
+    background: linear-gradient(rgba(223, 0, 19, 0.918),rgba(99, 0, 112, 0.787));
     
 }
  
