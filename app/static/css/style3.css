@@ -3,7 +3,7 @@ body{
     display: grid;
     grid-template-areas: 'nav nav'
                         'header header';
-    grid-auto-rows: 20vh 80vh;
+    grid-auto-rows: 20vh 60vh;
 }
 
 nav{
@@ -12,6 +12,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-content: center;
+    background: linear-gradient(rgba(223, 0, 19, 0.918),rgba(99, 0, 112, 0.787));
 }
 header{
     grid-area: header;
@@ -19,7 +20,14 @@ header{
     align-items: center;
     justify-content: space-around;
     background-color: blueviolet;
+    background: linear-gradient(rgba(23, 21, 21, 0.35),rgba(70, 55, 72, 0.6)), url('/static/images/woman.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+
 }
+
+
 
 header h1{
     color: whitesmoke;
@@ -40,13 +48,13 @@ header div input{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     margin: 1em 2em;
-    text-transform: uppercase;
-    color: black;
+    text-transform: none;
+    color:black;
     text-align: center;
 }
 
 header div label{
-    color: #fff;
+    color: whitesmoke;
     font-size: 10pt;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -58,7 +66,7 @@ header div button{
     justify-content: space-around;
     padding: 0.8em 0em;
     width: 350px;
-    background: purple;
+    background: white;
     border-radius: 50px;
     border: 0;
     color: #fff;
@@ -67,8 +75,9 @@ header div button{
     font-weight: bold;
     cursor: pointer;
     margin: 1em 2em;
-    text-transform: uppercase;
+    text-transform: none;
     text-decoration: none;
+    background: linear-gradient(rgba(223, 0, 19, 0.918),rgba(99, 0, 112, 0.787));
     
 }
  

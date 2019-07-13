@@ -15,19 +15,25 @@
         <a href="/areas">VOLTAR</a>
     </nav>
     <header>
-        <h1>Vagas</h1>   
-        {% for empresa in vaga %}
-        <div class="card">            
-            <p>Nome: {{empresa.nome}}</p>
-            <p>Endereço: {{empresa.endereco}}</p>
-            <p>Cargo: {{empresa.cargo}}</p> 
-            <p>Estado: {{empresa.estado}}</p> 
-            <p>Região: {{empresa.regiao}}</p> 
-            <p>Salário: {{empresa.salario}}</p> 
-            <p>Vagas: {{empresa.qtd_vaga}}</p>
-            <p>Descrição das vagas: {{empresa.descricao_vaga}}</p>            
-         </div>
-        {% endfor %}
+            <h3>Vagas em aberto:</h3>
+        
     </header>
+
+    <main>  
+            {% for empresa in vaga %}
+            <div class="card">            
+                <p><b>Nome:</b> {{empresa.nome}}</p>
+                <p><b>Endereço:</b>{{empresa.endereco}}</p>
+                <p><b>Cargo:</b> {{empresa.cargo}}</p> 
+                <p><b>Estado:</b>{{empresa.estado}}</p> 
+                <p><b>Salário:</b> {{empresa.salario}}</p> 
+                <p><b>Vagas:</b> {{empresa.qtd_vaga}}</p>
+                <p><b>Descrição das vagas:</b> {{empresa.Descricao_vaga}}</p>   
+            <div id="button">
+                <button id="button2">Quero me candidatar!</button>
+            </div>  
+            </div>
+            {% endfor %}
+    </main>
 </body>
 </html> 

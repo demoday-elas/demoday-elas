@@ -44,14 +44,25 @@ class Empresas(models.Model):
     endereco = models.CharField (max_length=100, default='')
     cargo  = models.CharField(max_length=100, default='')
     estado = models.CharField(max_length=2, choices=estado_opc, default='')
-    regiao = models.CharField(max_length=200, choices= zonas, default='')
     salario = models.CharField(max_length=50, default='')
     qtd_vaga = models.DecimalField(max_digits=8, decimal_places=0)
     Descricao_vaga = models.TextField()
     
     def __str__(self):
         return self.nome
+
+# class Seguranca(models.Model):
+#     nome = models.CharField(max_length=100, default='')
+#     endereco = models.CharField (max_length=100, default='')
+#     cargo  = models.CharField(max_length=100, default='')
+#     estado = models.CharField(max_length=2, choices=estado_opc, default='')
+#     salario = models.CharField(max_length=50, default='')
+#     qtd_vaga = models.DecimalField(max_digits=8, decimal_places=0)
+#     Descricao_vaga = models.TextField()
     
+#     def __str__(self):
+#         return self.nome       
+
 
 class Usuaria(models.Model):
     usuaria = models.CharField(max_length=20, default='')
@@ -65,11 +76,6 @@ class Usuaria(models.Model):
     def __str__(self):
         return self.usuaria
 
-class Login(models.Model):
-    nome = models.CharField(max_length=50)
-    sobrenome = models.CharField(max_length=50)
-    email = models.EmailField(max_length=50)    
-    senha = models.CharField(max_length=8)
+   
 
-    def _str_(self):
-        return self.sobrenome
+

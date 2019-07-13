@@ -1,6 +1,5 @@
-from django.shortcuts import render
-from app.models import Usuaria
-from app.models import Empresas
+from django.shortcuts import render, redirect
+from app.models import Usuaria, Empresas
 from app.forms import UsuariaForm, LoginForm, EmpresasForm
 
 # from app.forms import UsuariaForm
@@ -13,34 +12,35 @@ def mostrar_index(request):
 
 def mostrar_cadastro(request):
     formulario = UsuariaForm(request.POST or None)
-    msg = ''
-
+    msg = ''    
+    
     if formulario.is_valid():
         formulario.save()
         formulario = UsuariaForm()
-        msg = 'Cadastro realizado com sucesso linda!!!!!!!'
+        msg = 'Cadastro realizado com sucesso, vamos para o próximo passo? '
 
     contexto = {
         'form': formulario,
-        'msg':msg
-    }
+        'msg':msg   
+    } 
+
     return render (request, 'cadastro2.html', contexto)  
 
+
 def mostrar_login(request):
-    formulario = LoginForm(request.POST or None)
-    msg = ''
+    formulario_login = LoginForm(request.POST or None) 
+    msg = ' '
+    if formulario_login.is_valid():
+        usuario = formulario_login.cleaned_data['usuario']
+        senha = formulario_login.cleaned_data['senha']
+        user = Usuaria.objects.filter(usuaria=usuario).first()
+        
+        if not user or user.senha != senha:
+            msg = 'Verifique novamente'
+        else:
+            return redirect('/areas')
 
-    if formulario.is_valid():
-        formulario.save()
-        formulario = UsuariaForm()
-        msg = 'Cadastro realizado com sucesso linda!!!!!!!'
-
-    contexto = {
-        'form': formulario,
-        'msg':msg
-    }
-
-    return render (request, 'login3.html', contexto)
+    return  render(request, 'login3.html', {'form': formulario_login, 'msg': msg})
 
 def mostrar_areas(request):
     vagas = Usuaria.objects.all()
@@ -48,5 +48,8 @@ def mostrar_areas(request):
 
 def mostrar_vagas(request):  
     vaga = Empresas.objects.all()  
-    return render (request,'vagas5.html', {'vaga':vaga})   
+    return render (request,'vagas5.html', {'vaga':vaga})  
+
+def mostrar_vaga(request):
+    return render (request,'vagaNull6.html')
 

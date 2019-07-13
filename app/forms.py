@@ -1,5 +1,5 @@
 from django import forms
-from app.models import Usuaria, Login, Empresas
+from app.models import Usuaria, Empresas
 
 class EmpresasForm(forms.ModelForm):
     class Meta:
@@ -9,11 +9,24 @@ class EmpresasForm(forms.ModelForm):
             'endereco', 
             'cargo',
             'estado',
-            'regiao', 
             'salario', 
             'qtd_vaga', 
             'Descricao_vaga',                                                                                                                                  
         ]
+
+
+# class SegurancaForm(forms.ModelForm):
+#     class Meta:
+#         model = Seguranca
+#         fields = [
+#             'nome',
+#             'endereco', 
+#             'cargo',
+#             'estado',
+#             'salario', 
+#             'qtd_vaga', 
+#             'Descricao_vaga',                                                                                                                                  
+#       ]        
 
 class UsuariaForm(forms.ModelForm):
     class Meta:
@@ -28,12 +41,7 @@ class UsuariaForm(forms.ModelForm):
             'nascimento',
         ]
 
-class LoginForm(forms.ModelForm):
-    class Meta:
-        model = Login
-        fields = [
-            'nome',
-            'sobrenome',
-            'email',
-            'senha',
-        ]
+
+class LoginForm(forms.Form):
+    usuario = forms.CharField(label='Usuario')
+    senha = forms.CharField(label= 'Senha', widget=forms.PasswordInput())        

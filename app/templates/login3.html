@@ -20,9 +20,9 @@
         <div > 
             <h1>LOGIN</h1>     
             
-            {% if mensagem %}
-                <p>{{ mensagem }}</p>
-                {% endif %}
+            {% if msg %}
+                <p>{{ msg }}</p>
+            {% endif %}
             <form method="POST">
                 {% csrf_token %}
                 {{ form }}
