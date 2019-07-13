@@ -52,6 +52,11 @@ section div h3{
     height: 200px;
 }
 
+.btnCadastre{
+    text-align: center;
+    margin: 50px 0px;
+}
+
 button{
     border: none;
     color: white;
@@ -59,16 +64,21 @@ button{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     margin: 4px 2px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
     cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(255,0,49);
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 button:hover{
-    background-color: purple;
+    background-color: rgb(99,0,210);
     color: white;
+    transition-delay: 15ms;
 }
 
 footer{
