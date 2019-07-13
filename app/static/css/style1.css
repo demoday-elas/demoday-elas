@@ -10,11 +10,18 @@ header{
     height: 100vh;
 }
 
+header div{
+    width: 50vw;
+    float: right;
+    color: white;
+
+}
+
 h1{
     font-size: 48px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     padding-top: 350px;
 }
