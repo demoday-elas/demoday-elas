@@ -1,36 +1,12 @@
 body{
     margin:0;
-    display: grid;
-    grid-template-areas: 'nav nav'
-                        'header header'
-                        'section section';
-    grid-auto-rows: 20vh 10vh 100vh ; 
-    background-color: whitesmoke; 
-    background:  url('/static/images/desk.jpg'); 
-    background-size: cover;
-    background-position: top;
-    height: 10vh;  
-    font-family:'Ubuntu', sans-serif;   
+    padding: 0;
+    font-family:'Ubuntu', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;   
 }
 
-
-nav{ 
-    grid-area: nav;
-    background-color: red;
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    background: linear-gradient(rgba(223, 0, 19, 0.918),rgba(99, 0, 112, 0.787));
-    
-
-}
-nav a {
-    color:purple;
-    text-decoration: none;
-}
-
-header{
-    grid-area: section;   
+header{ 
     display: flex;
     align-items: flex-start;    
     justify-content: flex-start;
@@ -40,53 +16,49 @@ header{
     color: white;
 }
 
-header p{
-    color: purple;
-}
-
 section{
-    grid-area: section;
     display: flex;
     align-items: center;    
     justify-content: space-around;
+    height: 85vh;
 }
 
 section h1{
-    font-size: 60px;
-    font-weight: 900;
-    color: blueviolet;
-    text-align: center;
+    color: #222;
+    text-align: left;
+    font-weight: 700;
+    font-size: 25pt;
 }
 section h2{
-    color: blueviolet;
-    text-decoration: none;
-    text-align: center;
-    font-size: 25px;
+    color: #333;
+    text-align: left;
+    font-weight: 700;
+    font-size: 18pt;
 }
-
-section .opcoes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
 
 .button1{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0.8em 0em;
-    width: 350px;
-    background-color: purple;
-    background: linear-gradient(rgba(130, 0, 19, 0.918),rgba(50, 0, 112, 0.787));
-    border-radius: 50px;
-    border: 0;
-    color: #fff;
-    font-size: 10pt;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 1em 2em;
-    text-transform: none;
+    border: none;
+    width: 400px;
+    color: white;
+    padding: 12px 32px;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin: 20px 2px;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(99,0,210);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex-wrap: nowrap;
+  
+}
+
+.button1:hover{
+    background-color: rgb(255,0,49);
+    color: white;
+    transition-delay: 15ms;
 }

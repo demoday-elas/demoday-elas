@@ -1,24 +1,21 @@
+{% extends "layout.html" %}
 {% load staticfiles %}
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+{% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style4.css' %}">
     <link rel="shortcut icon" href="{% static 'favicon/favicon.png' %}"/>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>areas</title>
+    <title>Áreas</title>
+{% endblock %}
 </head>
 <body>
-    <nav>
-        <!-- colocar o logo -->     
-
-        <a href="/">LOGO</a>
-        <a href="/login3">VOLTAR</a>
-
-    </nav>
+{% block body %}
     <header>
             {%  for indice in vagas %}
             <p> Seja bem-vinda {{ indice.usuaria}} ,</p>
@@ -29,11 +26,11 @@
     <section>             
            
         <div class="opcoes">
-            <h1>Qual área você quer seguir <br> carreira? </h1>
+            <h1>Qual área você quer seguir carreira? </h1>
+            <h2>Comece selecionando a área desejada ao lado</h2>
          </div>                
 
-        <div class="vagas">   
-            <h2> Veja como a CONECTA pode te ajudar: </h2>               
+        <div class="vagas">               
 
             <a href="/vagas"><button class="button1">Arquitetura e Urbanismo</button></a>
             <a href="/vagas"><button class="button1">Beleza e Estética</button></a>
@@ -47,7 +44,7 @@
 
         </div>
         
-</section>
-    
+    </section>
+{% endblock %}
 </body>
 </html>
