@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin:400,600');
 @import url("https://use.fontawesome.com/releases/v5.0.10/css/all.css");
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
@@ -47,9 +51,8 @@ nav ul li a:hover{
     padding-left: 30px;
 }
 
-
 .footer{
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 360px);
 }
 
 a{
