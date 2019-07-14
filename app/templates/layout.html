@@ -6,7 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    {% block head %}
+    {% endblock %}
     <link rel="stylesheet" href="{% static 'css/layout.css' %}">
     <link rel="shortcut icon" href="{% static 'favicon/favicon.png' %}"/>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
@@ -14,20 +15,6 @@
     <title>Conecta</title>
 </head>
 <body>
-    
-    <nav>
-        <img class="logo" src="{% static 'images/logoConecta_Branco.png' %}" alt="logo">
-        <div class="menu">
-            <ul>
-                <li><a href="#section1">Como funciona?</a></li>
-                <li><a href="#section2">Saiba Mais</a></li>
-                <li><a href="/login3">Login</a></li>
-                <li><a href="/cadastro">Cadastro</a></li>
-    
-            </ul>
-        </div>
-    </nav>
-    
 
 {% block body %}
 {% endblock %}
@@ -44,7 +31,7 @@
     </div>
     <div class="creditsFooter">
         <p>Uma realização:</p>
-        <p>Amilton, Dandara Monike, Ketlyn Ferreguete e Marcia Corte.</p>
+        <p>Amilton Almeida, Dandara Monike, Ketlyn Ferreguete e Marcia Corte.</p>
         <p>@Conecta 2019 | Todos os direitos reservados.</p>
     </div>
          <script defer type="text/javascript" src="{% static 'js/index.js' %}"></script> 

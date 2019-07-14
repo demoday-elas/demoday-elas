@@ -11,40 +11,6 @@ body{
     font-size: 16px;
 }
 
-nav{
-    align-items: center;
-    color: #fff;
-    display: flex;
-    position: fixed;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 70px;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    z-index: 10;
-}
-
-nav ul{
-    margin: 0;
-}
-
-nav ul li{
-    display: inline-block;
-    padding: 16px 32px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-nav ul li a:hover{
-    text-decoration: none;
-}
-
 .logo{
     height: 48px;
     float: left;
