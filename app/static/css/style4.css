@@ -6,6 +6,10 @@ body{
     overflow-x: hidden;   
 }
 
+nav img{
+    padding: 10px 0px;
+}
+
 header{ 
     display: flex;
     align-items: flex-start;    

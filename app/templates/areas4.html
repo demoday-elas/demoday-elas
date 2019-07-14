@@ -16,6 +16,10 @@
 </head>
 <body>
 {% block body %}
+
+    <nav>
+        <a href="/"><img class="logo" src="{% static 'images/logoConecta_Colorido.png' %}" alt="logo"></a>
+    </nav>
     <header>
             {%  for indice in vagas %}
             <p> Seja bem-vinda {{ indice.usuaria}} ,</p>
@@ -23,15 +27,12 @@
 
     </header>       
 
-    <section>             
-           
+    <section>                        
         <div class="opcoes">
             <h1>Qual área você quer seguir carreira? </h1>
             <h2>Comece selecionando a área desejada ao lado</h2>
          </div>                
-
         <div class="vagas">               
-
             <a href="/vagas"><button class="button1">Arquitetura e Urbanismo</button></a>
             <a href="/vagas"><button class="button1">Beleza e Estética</button></a>
             <a href="/vagas."><button class="button1">Comunicação e Artes</button></a>
