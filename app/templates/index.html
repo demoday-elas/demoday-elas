@@ -17,13 +17,12 @@
 {% block body %}
     <header>
         <div>
-            <h1>Bem vinda ao Conecta!</h1>
-            <h2>Quem somos?</h2>
+            <h1>Quem somos?</h1>
             <p>Historicamente, as mulheres são oprimidas e poucas se encontram em posições de poder. Com o objetivo de mudar a situação que ainda persiste no Século XXI, nossa empresa busca trazer visibilidade e poder a todas as mulheres. 
             Conecta é um site que interliga essas mulheres em busca de uma vaga de emprego à empresas que apoiem a igualdade dentro do mercado de trabalho. </p>
         </div> 
     </header>
-    <section>
+    <section id="section1">
         <div>
             <img class="apoio" src="{% static 'images/apoio.png' %}" alt="">
             <h3>elas apoiam</h3>
@@ -36,11 +35,12 @@
         </div>
     </section>
     
-    <div class="btnCadastre">
-        <button>Comece Já!</button>
-    </div>
+    <!-- <div class="btnCadastre">
+        <a href="/cadastro2"></a> Comece Já!</button>
+    </div> -->
+    <p style="text-align:center;margin:50px 0px;font-weight: bold;color: lightgray">_____________________________________________________</p>
 
-<div class="slideshow-container">
+    <div class="slideshow-container">
 
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
@@ -59,13 +59,41 @@
   
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
+    </div>
 
-  <div style="text-align:center;margin-top:20px">
+    <div style="text-align:center;margin-top:20px">
     <span class="dot" onclick="currentSlide(1)"></span> 
     <span class="dot" onclick="currentSlide(2)"></span> 
     <span class="dot" onclick="currentSlide(3)"></span> 
-  </div>
+    </div>
+
+    <h1 id="section2" style="text-align:center;margin-top:120px">Você sabia?</h1>
+    <p style="text-align:center;margin-top:30px;font-weight: bold;color: lightgray">_____________________________________________________</p>
+
+    <section class="graficosContainer">
+        <div class="data1">
+            <img src="{% static 'images/percentage1.png' %}" alt="">
+            <!-- <h3>Está trabalhando atualmente?</h3> -->
+            <p>Mais de a metade das mulheres entrevistadas se encontram desempregadas, ou trabalham sem contrato fixo.</p>
+        </div>
+        <div class="data2">
+            <img src="{% static 'images/percentage2.png' %}" alt="">
+            <!-- <h3>Há interesse em um novo emprego?</h3> -->
+            <p>E de todas as mulheres que responderam a pesquisa, 73% possuem interesse em um novo emprego. </p>
+        </div>
+        <div class="data3">
+            <img src="{% static 'images/percentage3.png' %}" alt="">
+            <!-- <h3>Se você gerenciasse uma empresa (...):</h3> -->
+            <p>A maioria das mulheres entrevistadas dariam total prioridade na contratação de mulheres se gerenciassem uma empresa!  </p>
+        </div>
+    </section>
+    <p class="legenda">Todos os dados foram extraídos através de uma pesquisa feita entre mulheres, durante a elaboração do projeto. Disponível através <a href="https://docs.google.com/spreadsheets/d/1KRrTKyvUgSky5uidPou0Huy_r9ebg4ZF3idI7iMZfz0/edit?usp=sharing">deste link</a></p>
+
+    <div class="bottomtext">
+        <h2>MUDE ESSE QUADRO. FAÇA A DIFERENÇA!</h2>
+        <P>Seja como essas mulheres! Se você possui uma empresa e acredita que as mulheres merecem um lugar no mercado de trabalho, se una ao Conecta  e divulgue aqui as suas vagas! Uma empresa feita por mulheres para mulheres!</P>
+    </div>
+    
 
 {% endblock %}
 </body>
