@@ -1,8 +1,10 @@
+{% extends "layout.html" %}
 {% load staticfiles %}
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+{% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style2.css' %}">
@@ -11,15 +13,13 @@
     <script defer src="{% static 'JS/scripts2.js' %}"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cadastro</title>
+{% endblock %}
 </head>
 <body>
-    <nav>
-        <a href="/"> LOGO</a>
-        <a href="/">VOLTAR</a>
-    </nav>
+{% block body %}
     <header>                
-        <div > 
-            <h2 class="texto">Cadastre-se e saiba mais!</h2>           
+        <div class="cadastroContainer"> 
+            <h2 class="texto">Cadastre-se agora!</h2>           
             {% if msg %}
                 <p>{{ msg }}</p>
             {% endif %}
@@ -28,14 +28,17 @@
                 {{ form }}
                 <button id="botao" type="submit">CADASTRAR</button>     
             </form>        
+        </div> 
+        
+        <div class="verticalDivider"><span class="vl-innertext">ou</span></div>
 
-        </div>             
-        <div id="login">   
-            <h2 class="texto">Agora faça o seu login aqui</h2> 
+        <div id="login" class="loginContainer">   
+            <h2 class="texto">Faça seu login aqui</h2> 
         
             <a href="/login3"> LOGIN</a>
         </div>
 
     </header>
+{% endblock %}
 </body>
 </html>
