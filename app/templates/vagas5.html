@@ -35,7 +35,11 @@
                 <p><b>Descrição das vagas:</b> {{empresa.Descricao_vaga}}</p>   
                 <div id="button">
                     <button id="button2">Quero me candidatar!</button>
-                </div>  
+                </div> 
+                {% if msg %}
+                    <p>{{ msg }}</p>
+                {% endif %} 
+            
             </div>
         {% endfor %}
     </main>
