@@ -17,7 +17,7 @@ def mostrar_cadastro(request):
     if formulario.is_valid():
         formulario.save()
         formulario = UsuariaForm()
-        msg = 'Cadastro realizado com sucesso, vamos para o próximo passo? '
+        msg = 'Cadastro realizado com sucesso!'
 
     contexto = {
         'form': formulario,
@@ -36,7 +36,7 @@ def mostrar_login(request):
         user = Usuaria.objects.filter(usuaria=usuario).first()
         
         if not user or user.senha != senha:
-            msg = 'Verifique novamente'
+            msg = 'Verifique novamente.'
         else:
             return redirect('/areas')
 
