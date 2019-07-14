@@ -20,6 +20,12 @@ header{
     color: white;
 }
 
+
+header p{
+    color: purple;
+    
+}
+
 section{
     display: flex;
     align-items: center;    
