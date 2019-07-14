@@ -1,7 +1,9 @@
+{% extends "layout.html" %}
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+{% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style5.css' %}">
@@ -9,12 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>vagas</title>
+{% endblock %}
 </head>
 <body>
-    <nav>
-        <a href="/">LOGO</a>
-        <a href="/areas">VOLTAR</a>
-    </nav>
+{% block body %}
     <header>
             <h3>Vagas em aberto:</h3>
         
@@ -30,11 +30,12 @@
                 <p><b>Salário:</b> {{empresa.salario}}</p> 
                 <p><b>Vagas:</b> {{empresa.qtd_vaga}}</p>
                 <p><b>Descrição das vagas:</b> {{empresa.Descricao_vaga}}</p>   
-            <div id="button">
-                <button id="button2">Quero me candidatar!</button>
-            </div>  
+                <div id="button">
+                    <button id="button2">Quero me candidatar!</button>
+                </div>  
             </div>
             {% endfor %}
     </main>
+{% endblock %}
 </body>
 </html> 

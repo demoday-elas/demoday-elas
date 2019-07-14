@@ -16,10 +16,7 @@ header{
 
 
 header div p{
-<<<<<<< HEAD
     font-family: 'Ubuntu', sans-serif;
-=======
->>>>>>> 83650c01416ded531617cfc137b4350add6a8970
     font-size: 15px;
     font-weight: 900;
     color: purple;
@@ -36,10 +33,6 @@ header div p{
     border: 0;
     color: whitesmoke;
     font-size: 10pt;
-<<<<<<< HEAD
-    font-family: 'Ubuntu', sans-serif;
-=======
->>>>>>> 83650c01416ded531617cfc137b4350add6a8970
     font-weight: bold;
     margin: 0.7em 2em;
     text-transform: none;
@@ -48,38 +41,16 @@ header div p{
 }
 
 header div label{
-<<<<<<< HEAD
-    color: #fff;
-    font-size: 10pt;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-=======
     color: #d3d3d3;
     font-size: 8pt;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
->>>>>>> 83650c01416ded531617cfc137b4350add6a8970
 }
 
 form{
     display: flex;
     align-items: center;
-<<<<<<< HEAD
-    justify-content: space-around;
-    padding: 0.8em 0em;
-    width: 350px;
-    background: purple;
-    border-radius: 50px;
-    border: 0;
-    color: #fff;
-    font-size: 10pt;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 1em 2em;
-    text-transform: none;
-=======
     flex-direction: column;
     text-align: left;
 }
@@ -90,7 +61,6 @@ form{
     color: white;
     padding: 16px 32px;
     text-align: center;
->>>>>>> 83650c01416ded531617cfc137b4350add6a8970
     text-decoration: none;
     display: inline-block;
     font-size: 12px;
@@ -106,29 +76,11 @@ form{
 }
 
 #login a{
-<<<<<<< HEAD
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0.8em 0em;
-    width: 350px;
-    background: purple;
-    border-radius: 50px;
-    border: 0;
-    color: #fff;
-    font-size: 10pt;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 1em 2em;
-    text-transform: none;
-=======
     border: none;
     width: 200px;
     color: white;
     padding: 16px 32px;
     text-align: center;
->>>>>>> 83650c01416ded531617cfc137b4350add6a8970
     text-decoration: none;
     display: inline-block;
     font-size: 12px;

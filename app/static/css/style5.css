@@ -1,31 +1,13 @@
 body{
-    margin: 0;
-   
-    display: grid;
-    grid-template-areas: 'nav nav nav '
-                        'header header header'
-                        'main main main';
-    grid-auto-rows: 20vh 20vh 60vh;
-    background-size: cover;
-    background-position: top;
-    height: 10vh;
-    font-family:'Ubuntu', sans-serif; 
-
-    
-}
-
-nav{
-    grid-area: nav;
-    background-color: blue;
-    background: linear-gradient(rgba(223, 0, 19, 0.918),rgba(99, 0, 112, 0.787));
-
-
+    margin:0;
+    padding: 0;
+    font-family:'Ubuntu', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;   
 }
 
 header{
-    grid-area: header;
-  
-    
+    height: 10vh;  
 }
 
 header h3{
@@ -35,7 +17,7 @@ header h3{
 }
 
 main{
-    grid-area: main;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -79,7 +61,5 @@ main hr{
     border-radius: 15px;
     border: 3px solid purple;
     padding: 10px;
-
-    
     
 }

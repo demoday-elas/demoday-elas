@@ -1,15 +1,14 @@
 body{
     margin: 0%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family:'Ubuntu', sans-serif; 
+    font-family:'Ubuntu', sans-serif;
+    text-align: center;
+    height: 100vh; 
     
     
-}
-#galinha{
-    height:50%;
-    width: 50%;
 }
 
 #texto{
@@ -18,20 +17,27 @@ body{
 }
 
 #voltar{
-    display: flex;
-    justify-content: center;
-    padding: 0.8em 0em;
-    width: 200px;
-    background: purple;
-    border-radius: 10px;
-    border: 0;
-    color: #fff;
-    font-size: 10pt;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 1em 2em;
-    text-transform: none;
+    border: none;
+    width: 150px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
     text-decoration: none;
-    background: linear-gradient(rgba(233, 0, 19, 0.918),rgba(50, 0, 112, 0.787));
+    display: inline-block;
+    font-size: 12px;
+    margin: 20px 2px;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(255,0,49);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#voltar:hover{
+    background-color: rgb(99,0,210);
+    color: white;
+    transition-delay: 15ms;
 }
 
