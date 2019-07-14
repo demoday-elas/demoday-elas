@@ -4,6 +4,7 @@ body{
     grid-template-areas: 'nav nav'
                         'header header';
     grid-auto-rows: 20vh 60vh;
+    font-family:'Ubuntu', sans-serif; 
 }
 
 nav{
@@ -42,7 +43,6 @@ header div input{
     border: 0;
     color: #fff;
     font-size: 10pt;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     margin: 1em 2em;
     text-transform: none;
@@ -53,7 +53,6 @@ header div input{
 header div label{
     color: whitesmoke;
     font-size: 10pt;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
@@ -68,7 +67,6 @@ header div button{
     border: 0;
     color: #fff;
     font-size: 10pt;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     cursor: pointer;
     margin: 1em 2em;

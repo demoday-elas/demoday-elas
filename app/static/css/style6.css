@@ -3,6 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family:'Ubuntu', sans-serif; 
     
     
 }
@@ -12,7 +13,6 @@ body{
 }
 
 #texto{
-    font-family: 'Merriweather', serif;
     color:black;
     font-size: 30px;
 }
@@ -27,7 +27,6 @@ body{
     border: 0;
     color: #fff;
     font-size: 10pt;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     cursor: pointer;
     margin: 1em 2em;

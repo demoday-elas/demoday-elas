@@ -3,7 +3,8 @@ body{
     display: grid;
     grid-template-areas: 'nav nav'
                         'header header';
-    grid-auto-rows: 20vh 100vh;                    
+    grid-auto-rows: 20vh 100vh;
+    font-family:'Ubuntu', sans-serif;                    
     
 }
 
@@ -40,7 +41,6 @@ header{
 }
 
 header div p{
-    font-family: 'Abel', sans-serif;
     font-size: 15px;
     font-weight: 900;
     color: purple;
@@ -58,7 +58,6 @@ header div p{
     border: 0;
     color: #fff;
     font-size: 10pt;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     margin: 1em 2em;
     text-transform: none;
@@ -71,7 +70,6 @@ header div p{
 header div label{
     color: #fff;
     font-size: 10pt;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
@@ -86,7 +84,6 @@ header div label{
     border: 0;
     color: #fff;
     font-size: 10pt;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     cursor: pointer;
     margin: 1em 2em;
@@ -106,7 +103,6 @@ header div label{
     border: 0;
     color: #fff;
     font-size: 10pt;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     cursor: pointer;
     margin: 1em 2em;
