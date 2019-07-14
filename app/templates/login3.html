@@ -1,34 +1,43 @@
+{% extends "layout.html" %}
 {% load staticfiles %}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+{% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style3.css' %}">
     <link rel="shortcut icon" href="{% static 'favicon/favicon.png' %}"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
+{% endblock %}
 </head>
 <body>
-    <nav>
+{% block body %}
+    <!-- <nav>
             <a href="/">LOGO</a>
             <a href="/">VOLTAR</a>
-    </nav>
-    <header>   
-        <h1>Que bom vê-la por aqui :)</h1>
-        <div > 
-            <h1>LOGIN</h1>     
+    </nav> -->
+    <div class="mainContainer"></div>
+        <header>
+                <h1>Que bom vê-la por aqui :)</h1> 
+            <div > 
+                <h1>LOGIN</h1>     
             
-            {% if msg %}
-                <p>{{ msg }}</p>
-            {% endif %}
-            <form method="POST">
-                {% csrf_token %}
-                {{ form }}
+                {% if msg %}
+                    <p>{{ msg }}</p>
+                {% endif %}
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form }}
            
-             <button  type="submit" > Logar</button>
-        </div>   
+                <button  type="submit" > ENTRAR</button>
+            </div>  
+    </div>            
     </header>
+
+{% endblock %}
 </body>
 </html>
