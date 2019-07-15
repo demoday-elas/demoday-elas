@@ -1,1 +1,1 @@
-web:gunicorn demoday-elas.wsgi
+web:gunicorn projeto.wsgi
