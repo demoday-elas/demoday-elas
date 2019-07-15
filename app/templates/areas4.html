@@ -21,9 +21,9 @@
         <a href="/"><img class="logo" src="{% static 'images/logoConecta_Colorido.png' %}" alt="logo"></a>
     </nav>
     <header>
-            {%  for indice in vagas %}
+        {%  for indice in vagas %}
             <p> Seja bem-vinda {{ indice.usuaria}} </p>
-            {% endfor %}
+        {% endfor %}
 
     </header>       
 
@@ -42,7 +42,6 @@
             <a href="/vagas"><button class="button1">Tecnologia da Informação</button></a>
             <a href="/vagas."><button class="button1">Saúde</button></a>               
             <a href="/vagas."><button class="button1">Serviços Gerais</button></a>
-
         </div>
         
     </section>
