@@ -20,8 +20,7 @@
     </nav>
 
     <header>
-            <h3>Veja só as vagas que temos em aberto:</h3>       
-      
+        <h3>Veja só as vagas que temos em aberto:</h3>      
     </header>
 
     <main>  
@@ -35,12 +34,11 @@
                 <p><b>Vagas:</b> {{empresa.qtd_vaga}}</p>
                 <p><b>Descrição das vagas:</b> {{empresa.Descricao_vaga}}</p>   
                 <div id="button">
-                    <a  id="button2" href="/retorno">Quero me candidatar</a>
+                <a  id="button2" href="/retorno">Quero me candidatar</a>
                 </div> 
                 {% if msg %}
                     <p>{{ msg }}</p>
-                {% endif %} 
-            
+                {% endif %}             
             </div>
         {% endfor %}
     </main>
