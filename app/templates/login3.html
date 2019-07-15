@@ -21,16 +21,15 @@
     </nav>
     <div class="mainContainer"></div>
         <header>
-                <h1>Que bom vê-la por aqui :)</h1> 
+            <h1>Que bom vê-la por aqui :)</h1> 
             <div > 
-                <h1>LOGIN</h1>     
-            
+                <h1>LOGIN</h1>               
                 {% if msg %}
                     <p>{{ msg }}</p>
                 {% endif %}
                 <form method="POST">
-                    {% csrf_token %}
-                    {{ form }}
+                {% csrf_token %}
+                {{ form }}
            
                 <button  type="submit" > ENTRAR</button>
             </div>  
