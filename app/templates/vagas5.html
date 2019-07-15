@@ -35,7 +35,7 @@
                 <p><b>Vagas:</b> {{empresa.qtd_vaga}}</p>
                 <p><b>Descrição das vagas:</b> {{empresa.Descricao_vaga}}</p>   
                 <div id="button">
-                    <button id="button2">Quero me candidatar!</button>
+                    <a  id="button2" href="/retorno">Quero me candidatar</a>
                 </div> 
                 {% if msg %}
                     <p>{{ msg }}</p>
@@ -45,5 +45,6 @@
         {% endfor %}
     </main>
 {% endblock %}
+
 </body>
 </html> 

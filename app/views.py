@@ -53,3 +53,6 @@ def mostrar_vagas(request):
 def mostrar_vaga(request):
     return render (request,'vagaNull6.html')
 
+def mostrar_retorno(request):
+    return render (request,'retorno7.html')    
+

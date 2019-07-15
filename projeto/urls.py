@@ -25,5 +25,5 @@ urlpatterns = [
     path('areas/',views.mostrar_areas),
     path('vagas/',views.mostrar_vagas),
     path ('vagas./',views.mostrar_vaga),
-    
+    path ('retorno/',views.mostrar_retorno),    
 ]
