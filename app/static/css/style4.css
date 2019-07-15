@@ -3,17 +3,22 @@ body{
     padding: 0;
     font-family:'Ubuntu', sans-serif;
     max-width: 100%;
-    overflow-x: hidden;   
+    overflow-x: hidden;  
+    background: url('/static/images/desk.jpg'); 
+    background-size: cover;
+    background-position: top;
+    height: 10vh;
 }
 
 nav img{
     padding: 10px 0px;
+
 }
 
 header{ 
     display: flex;
     align-items: flex-start;    
-    justify-content: flex-start;
+    justify-content: space-around;
     color: black;
     font-size: 40px;
     font-weight: 900;
@@ -23,7 +28,7 @@ header{
 
 
 header p{
-    color: purple;
+    color:purple;
     
 }
 
