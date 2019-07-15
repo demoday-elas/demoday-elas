@@ -1,0 +1,152 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family:'Ubuntu', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: #333;  
+}
+
+nav img{
+    padding: 10px 0px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+
+header div p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: purple;
+}
+
+ header div input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5em 0em;
+    width: 350px;
+    background: #333;
+    border-radius: 50px;
+    border: 0;
+    color: whitesmoke;
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 0.7em 2em;
+    text-transform: none;
+    text-align: center;
+    outline: none;
+}
+
+header div label{
+    color: #d3d3d3;
+    font-size: 8pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+#botao{
+    border: none;
+    width: 200px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 20px 2px;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(255,0,49);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+#login a{
+    border: none;
+    width: 200px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 20px 2px;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(255,0,49);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+#login a:hover, #botao:hover{
+    background-color: rgb(99,0,210);
+    color: white;
+    transition-delay: 15ms;
+}
+
+.texto{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px; 
+    text-transform: initial;
+}
+
+.cadastroContainer{
+    padding: 20px 15px;
+    background-color: rgba(20, 20, 20, 0.548);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainer{
+    padding: 60px 35px;
+    background-color: rgba(20, 20, 20, 0.548);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.verticalDivider {
+    border-left: 2px solid rgb(255,0,49);
+    height: 300px;
+    left: 50%;
+    margin-left: -2px;
+    top: 0;
+}
+
+.vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    border: 2px solid rgb(255,0,49);
+    border-radius: 50%;
+    padding: 8px 8px;
+    color: white;
+    letter-spacing: 1px;
+}
+

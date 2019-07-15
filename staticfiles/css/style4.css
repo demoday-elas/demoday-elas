@@ -1,0 +1,87 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family:'Ubuntu', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;  
+    background: url('/static/images/desk.jpg'); 
+    background-size: cover;
+    background-position: top;
+    height: 10vh;
+}
+
+nav img{
+    padding: 10px 0px;
+
+}
+
+header{ 
+    display: flex;
+    align-items: flex-start;    
+    justify-content: space-around;
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    padding: 30px 0px 0px 0px;
+}
+
+
+header p{
+    color:purple;
+    font-size: 50px;
+    
+}
+
+section{
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;
+    height: 85vh;
+    padding: 0;
+}
+
+section h1{
+    color: #222;
+    text-align: left;
+    font-weight: 700;
+    font-size: 25pt;
+}
+section h2{
+    color: #333;
+    text-align: left;
+    font-weight: 700;
+    font-size: 18pt;
+}
+
+.vagas{
+    text-align: center;
+}
+
+
+.button1{
+    border: none;
+    width: 400px;
+    color: white;
+    padding: 12px 32px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin: 20px 2px;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: rgb(99,0,210);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex-wrap: nowrap;
+  
+}
+
+.button1:hover{
+    background-color: rgb(255,0,49);
+    color: white;
+    transition-delay: 15ms;
+}
