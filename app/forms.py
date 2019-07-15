@@ -26,8 +26,12 @@ class UsuariaForm(forms.ModelForm):
             'telefone',
             'nascimento',
         ]
+        labels = {
+            "usuaria": "Usuária",
+            "email": "E-mail"
+        }
 
 
 class LoginForm(forms.Form):
-    usuario = forms.CharField(label='Usuario')
+    usuario = forms.CharField(label='Usuária')
     senha = forms.CharField(label= 'Senha', widget=forms.PasswordInput())        
