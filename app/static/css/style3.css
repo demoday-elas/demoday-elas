@@ -94,10 +94,10 @@ header p {
 }
 
 .mainContainer{
-        min-height: 100%;
-        height: auto;
-        height: 100%;
-        margin: 0 auto -120px;
+    min-height: 100%;
+    height: auto;
+    height: 100%;
+    margin: 0 auto -120px;
 }
  
 
