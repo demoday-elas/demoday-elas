@@ -10,37 +10,37 @@ body{
 }
 
 nav{
-  align-items: center;
-  color: #fff;
-  display: flex;
-  position: fixed;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 70px;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  z-index: 10;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 10;
 }
 
 nav ul{
-  margin: 0;
+    margin: 0;
 }
 
 nav ul li{
-  display: inline-block;
-  padding: 16px 32px;
+    display: inline-block;
+    padding: 16px 32px;
 }
 
 nav ul li a{
-  text-decoration: none;
-  color: #fff;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 nav ul li a:hover{
-  text-decoration: none;
+    text-decoration: none;
 }
 
 header{
@@ -169,11 +169,11 @@ footer{
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .numbertext {
-  display: none;
+    display: none;
 }
 
 .dot {
@@ -188,25 +188,25 @@ footer{
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+    background-color: #717171;
 }
 
 /* animação de Fading */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .7} 
-  to {opacity: 1}
+    from {opacity: .7} 
+    to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .7} 
-  to {opacity: 1}
+    from {opacity: .7} 
+    to {opacity: 1}
 }
 
 
