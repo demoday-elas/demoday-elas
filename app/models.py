@@ -2,14 +2,6 @@ from django.db import models
 
 # Create your models here.
 
-zonas = [
-        ('zl','Zona Leste'),
-        ('zn','Zona Norte'),
-        ('zo','Zona Oeste'),
-        ('zs','Zona Sul'),
-        ('ct','Centro'),
-]
-
 estado_opc = [
     ('AC', 'Acre'), 
     ('AL', 'Alagoas'),
@@ -19,13 +11,13 @@ estado_opc = [
     ('DF', 'Distrito Federal'),
     ('ES', 'Espírito Santo'),
     ('GO', 'Goiás'),
-    ('MA', 'Maranão'),
+    ('MA', 'Maranhão'),
     ('MG', 'Minas Gerais'),
     ('MS', 'Mato Grosso do Sul'),
     ('MT', 'Mato Grosso'),
     ('PA', 'Pará'),
     ('PB', 'Paraíba'),
-    ('PE', 'Pernanbuco'),
+    ('PE', 'Pernambuco'),
     ('PI', 'Piauí'),
     ('PR', 'Paraná'),
     ('RJ', 'Rio de Janeiro'),

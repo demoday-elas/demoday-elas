@@ -26,11 +26,13 @@ class UsuariaForm(forms.ModelForm):
             'telefone',
             'nascimento',
         ]
+
         labels = {
             "usuaria": "Usuária",
-            "email": "E-mail"
+            "email": "E-mail",
         }
 
+    senha = forms.CharField(label= 'Senha', widget=forms.PasswordInput())  
 
 class LoginForm(forms.Form):
     usuario = forms.CharField(label='Usuária')
