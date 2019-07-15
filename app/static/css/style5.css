@@ -69,14 +69,14 @@ main hr{
     letter-spacing: 2px;
 }
 
-#button:hover{
+#button2:hover{
     background-color: rgb(99,0,210);
     color: white;
     transition-delay: 15ms;
 }
 
 .card{
-    width: 400px;
+    width: 380px;
     height: 400px;
     border-radius: 15px;
     border: 3px solid purple;
